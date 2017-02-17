@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
 	<title>Favorites Organizer powered by Cloudant</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
@@ -15,7 +16,13 @@
 			Favorites Organizer powered by Cloudant
 		</p>
 	</div>
-
+	
+	<div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
 
 	<section>
 		<table id='notes' class='records' border='0' cellspacing='0' cellpadding='0'><tbody></tbody></table>
